@@ -1,12 +1,16 @@
+/** 
+ * get a pivot index 
+ * rearrange around pivot
+ *  -swap partition index value with pivot value
+ * partition by pivot recursive
+ * @param {*} A 
+ * @returns 
+ */
 export default function sort(A=[]){
     return quickPartition(A, 0, A.length-1);  
 }
 
 function quickPartition(A=[], leftI, rightI){
-    //get a pivot index
-    //rearrange around pivot
-    //partition by pivot recursive
-
     if(A.length>1 && leftI<rightI){
         // console.log(leftI, rightI, A);
         //get a pivot index

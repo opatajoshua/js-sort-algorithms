@@ -1,3 +1,13 @@
+/**
+ * Selection Sort- O(N²) 
+ * loop through N arrays
+ * on index x find the minimin value from index x to N-1
+ * switch the values between index x and the minimum value's index
+ * till x = n-1
+ * @param {*} A 
+ * @returns 
+ */
+
 export default function sort(A=[]){
     for(let pass=0; pass<A.length-1;pass++){
         // let allSorted= true; //does not work well with selection sort
